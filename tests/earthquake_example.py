@@ -27,7 +27,7 @@ print("Exp Hawkes MLE fit: ", 𝛉_exp_mle)
 
 # Calculate the EM estimate or the same type of Hawkes process
 𝛉_exp_em = hawkes.exp_em(ts, T, iters=100)
-print("Exp Hawkes EM fit: ", 𝛉_exp_mle)
+print("Exp Hawkes EM fit: ", 𝛉_exp_em)
 
 # Get the likelihoods of each fit to find the better one
 ll_mle = hawkes.exp_log_likelihood(ts, T, 𝛉_exp_mle)
